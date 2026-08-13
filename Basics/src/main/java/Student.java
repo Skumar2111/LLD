@@ -1,14 +1,16 @@
-public class Student {
+import abstraction.PrintInfo;
+
+public class Student extends PrintInfo {
 
     /* States */
-    String id;
-    String name;
-    int division;
-    char section;
+    private String id;
+    private String name;
+    private Integer division;
+    private Character section;
 
     /* Constructor */
 
-    public Student(String id, String name, int division, char section) {
+    public Student(String id, String name, Integer division, Character section) {
         this.id = id;
         this.name = name;
         this.division = division;
@@ -61,5 +63,12 @@ public class Student {
                 ", division=" + division +
                 ", section=" + section +
                 '}';
+    }
+
+    @Override
+    protected String printingInfo() {
+
+        return this.toString();
+
     }
 }
