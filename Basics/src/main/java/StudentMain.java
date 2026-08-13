@@ -6,5 +6,7 @@ public class StudentMain {
 
         student.read();
 
+        System.out.println(student.toString());
+
     }
 }

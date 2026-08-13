@@ -48,9 +48,18 @@ public class Student {
         this.section = section;
     }
 
-
     public void read()
     {
         System.out.println(name+ " is reading ");
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", division=" + division +
+                ", section=" + section +
+                '}';
     }
 }
