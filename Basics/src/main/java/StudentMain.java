@@ -22,6 +22,8 @@ public class StudentMain {
             System.out.println(student.printingInfo());
 
             student.doingOperations();
+
+            student.genericMethod();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (NoSuchMethodException e) {

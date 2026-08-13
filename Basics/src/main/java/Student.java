@@ -1,6 +1,7 @@
 import abstraction.PrintInfo;
+import abstraction.StudentInterface;
 
-public class Student extends PrintInfo {
+public class Student extends PrintInfo implements StudentInterface {
 
     /* States */
     private String id;
@@ -70,5 +71,10 @@ public class Student extends PrintInfo {
 
         return this.toString();
 
+    }
+
+    @Override
+    public void genericMethod() {
+        System.out.println("We are into generic interface method -- Yoc can add any generic info here");
     }
 }
