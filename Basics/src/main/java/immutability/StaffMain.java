@@ -9,8 +9,12 @@ public class StaffMain {
 
         List<String> dept = new ArrayList<>();
         dept.add("CSE");
-        ImmutableStaff immutableStaff = new ImmutableStaff("123","Sushant",dept);
         dept.add("MECH");
+
+        /* Once Object is created no change to it */
+        ImmutableStaff immutableStaff = new ImmutableStaff("123","Sushant",dept);
+
+      //  immutableStaff.getDepartments().add("MECH");
         System.out.println(immutableStaff.toString());
 
     }

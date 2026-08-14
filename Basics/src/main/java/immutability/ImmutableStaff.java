@@ -10,11 +10,17 @@ final class ImmutableStaff {
     private final List<String> departments;
 
 
+    public List<String> getDepartments() {
+        return departments;
+    }
+
     ImmutableStaff(String emp_id, String name, List<String> departments) {
         this.emp_id = emp_id;
         this.name = name;
         // Immutability failure
-        this.departments = departments;
+        /*this.departments = departments;*/
+
+        this.departments = List.copyOf(departments);
     }
 
     public String getId()
