@@ -1,6 +1,7 @@
 package immutability;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 final class ImmutableStaff {
@@ -19,8 +20,8 @@ final class ImmutableStaff {
         this.name = name;
         // Immutability failure
         /*this.departments = departments;*/
-
-        this.departments = List.copyOf(departments);
+        this.departments = Collections.unmodifiableList(departments);
+       // this.departments = List.copyOf(departments);
     }
 
     public String getId()
