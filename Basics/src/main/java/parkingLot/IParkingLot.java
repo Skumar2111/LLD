@@ -1,4 +1,4 @@
 package parkingLot;
 
-public class IParkingLot {
+public interface IParkingLot {
 }
