@@ -1,6 +1,6 @@
 package main.java.com.example.park_sure.ErrorHandling;
 
-import org.springframework.security.core.userdetails.UserDetails;
+
 
 public class ParkingUserException {
     private int status;

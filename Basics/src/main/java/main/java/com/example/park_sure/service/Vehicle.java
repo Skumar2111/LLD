@@ -1,6 +1,7 @@
 package main.java.com.example.park_sure.service;
 
-import com.example.park_sure.service.enums.VehicleType;
+
+import main.java.com.example.park_sure.service.enums.VehicleType;
 
 public class Vehicle {
 

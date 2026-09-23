@@ -1,13 +1,15 @@
 package main.java.com.example.park_sure.service;
 
-import com.example.park_sure.service.enums.SpotType;
+
+
+import DesignPattern.Factory.Vehicle;
 
 import java.util.concurrent.locks.ReentrantLock;
 
 public class ParkingSpot {
 
     String id;
-    SpotType type;
+    //SpotType type;
     ParkingFloor floor;
     boolean isAvailable;
     Vehicle vehicle;
@@ -52,10 +54,10 @@ public class ParkingSpot {
         this.isAvailable = true;
     }
 
-    public SpotType getType()
+/*    public SpotType getType()
     {
         return SpotType.BIKE_SPOT;
-    }
+    }*/
 
     public Vehicle getVehicle()
     {
